@@ -18,7 +18,7 @@
          "responses": [
             "A private prosecution is brought by a private individual to seek redress for a wrong done unto him. If the subject of the prosecution is found guilty and convicted, he will be duly sentenced by the Court, even though the Prosecution was not instituted by the State. A private prosecution is thus 'a prosecution by a private individual which, if successful, relies on the state machinery to mete out the sentence imposed- per Yong CJ, in Cheng William v Loo Ngee Long Edmund 2001 2 SLR(R) 626. The private individual may conduct the prosecution himself if he does not have a lawyer. "]
         },
-        {"tag": "How to institute a Private Prosecutor",
+        {"tag": "Private Prosecutor",
          "patterns": [
             "How does one institute a private prosecution ?" ], 
          "responses": [
@@ -30,16 +30,16 @@
          "responses": ["Generally, Singapore does not have extra-territorial jurisdiction to prosecute criminal offences committed overseas. However, such a person may be prosecuted under the laws of the jurisdiction he is in. Also, there are certain offences which have been legislated by Parliament to have extra-territorial effect: corruption offences (see: section 37 of the Prevention of Corruption Act) and having commercial sex with a minor under 18 outside Singapore (see section 376C of the Penal Code)."]
         },
         {"tag": "interview with prosecutor",
-         "patterns": ["Prosecutors routinely interview witnesses and victims of crime in order to assess the case fully before deciding whether or not to prosecute the accused person. In addition, prosecutors may also interview witnesses and victims of crime before a trial for a better understanding of the evidence that the witnesses and victims of crime are likely to give in court. These interviews are designed to allow prosecutors to acquire a deeper understanding of the facts of the case, and will involve the prosecutors asking some questions in order to clarify what had transpired. The questions asked are not meant to intimidate, and witnesses and victims are only required to relate the relevant events to the extent that their memories allow. Interviews with prosecutors are usually conducted in the presence of the investigating officer in a meeting room in AGC. Interpreters may also be present where necessary.","What should a witness/victim of crime expect during interviews with prosecutors?"],
+         "patterns": ["What should a witness/victim of crime expect during interviews with prosecutors?"],
          "responses": ["Prosecutors routinely interview witnesses and victims of crime in order to assess the case fully before deciding whether or not to prosecute the accused person. In addition, prosecutors may also interview witnesses and victims of crime before a trial for a better understanding of the evidence that the witnesses and victims of crime are likely to give in court. These interviews are designed to allow prosecutors to acquire a deeper understanding of the facts of the case, and will involve the prosecutors asking some questions in order to clarify what had transpired. The questions asked are not meant to intimidate, and witnesses and victims are only required to relate the relevant events to the extent that their memories allow. Interviews with prosecutors are usually conducted in the presence of the investigating officer in a meeting room in AGC. Interpreters may also be present where necessary."]
         },
-        {"tag": "Must all representations on behalf of accused persons be submitted to AGC through a hard copy letter?",
-         "patterns": ["Must all representations on behalf of accused persons be submitted to AGC through a hard copy letter?" ,"No. Representations on behalf of accused persons may also be sent to AGC at AGC_Crime_Representations@agc.gov.sg."],
+        {"tag": "MAttorney-General's Chambers",
+         "patterns": ["Must all representations on behalf of accused persons be submitted to AGC through a hard copy letter?" ],
          "responses": ["Are you looking to rent today or later this week?"],
          "context_set": "AGC"
         },
-        {"tag": "defence counsel Urgent Representation",
-         "patterns": ["How can accused persons and defence counsel make urgent representations to AGC?","Several prosecutors from AGC’s Crime Cluster are rostered to be on duty on each working day. These Duty Officers are responsible for dealing with cases which require immediate attention, for instance, where investigating officers require urgent directions and where urgent representations are made by accused persons and defence counsel. In addition, there is a Senior DPP on duty in the State Courts every morning from Monday to Saturday (excluding public holidays), and urgent representations may be dealt with by the Senior DPP on duty as well. "],
+        {"tag": "Urgent Representation",
+         "patterns": ["How can accused persons and defence counsel make urgent representations to AGC?"],
          "responses": ["Several prosecutors from AGC’s Crime Cluster are rostered to be on duty on each working day. These Duty Officers are responsible for dealing with cases which require immediate attention, for instance, where investigating officers require urgent directions and where urgent representations are made by accused persons and defence counsel. In addition, there is a Senior DPP on duty in the State Courts every morning from Monday to Saturday (excluding public holidays), and urgent representations may be dealt with by the Senior DPP on duty as well. "],
          "context_filter": "urgent representation"
         },
@@ -53,28 +53,23 @@
                 "responses": ["No. In order to give each legal officer a complete understanding of CJD’s role and function, the Chief Prosecutor and CJD management make a conscious effort to expose each legal officer to the work of all the directorates. CJD legal officers are therefore routinely assigned work by the Directors of other directorates, especially in areas of work in which they have indicated an interest.","Yes. Legal officers in CJD can request a move from one directorate to another, for instance, when they have acquired sufficient expertise in the work of a particular directorate and would like to gain more experience in the work of another directorate."],
                 "context_filter": "legal officers in CJD"
         },
-        {"tag": "If I have a legal problem, can AGC advise me?",
-                "patterns": ["If I have a legal problem, can AGC advise me?"],
+        {"tag": "legal problem",
+                "patterns": ["If I have a legal problem, can AGC advise me?", "can the Attorney-General help me on legal matters?"],
                 "responses": ["The information contained on these pages is not legal advice. We regret to inform that we are unable to advise you as the Attorney-General's Chambers are the legal advisers to the government, and cannot provide legal advice to members of the public. Should you require independent legal advice, you may wish to refer to the website of the Law Society of Singapore www.lawsociety.org.sg which provides a list of law firms in Singapore."],
                 "context_filter": ""
         },
-        {"tag": "If I have a legal problem, can AGC advise me?",
-                "patterns": ["If I have a legal problem, can AGC advise me?"],
-                "responses": ["The information contained on these pages is not legal advice. We regret to inform that we are unable to advise you as the Attorney-General's Chambers are the legal advisers to the government, and cannot provide legal advice to members of the public. Should you require independent legal advice, you may wish to refer to the website of the Law Society of Singapore www.lawsociety.org.sg which provides a list of law firms in Singapore."],
-                "context_filter": ""
-        }
-        ,
-        {"tag": "Where can I find information on legislation and reproduction of legislation? ",
+        
+        {"tag": "legislation information ",
                 "patterns": ["Where can I find information on legislation and reproduction of legislation? "],
                 "responses": ["For FAQs on legislation and the reproduction of legislation, please go to https://sso.agc.gov.sg/Help/FAQ. "],
                 "context_filter": ""
         },
-        {"tag": "I have a dispute with my neighbor as there is loud music playing from his house all night.  Can I ask the Attorney-General to take action against him on my behalf?",
+        {"tag": "dispute with my neighbor",
                 "patterns": ["I have a dispute with my neighbor as there is loud music playing from his house all night.  Can I ask the Attorney-General to take action against him on my behalf?"],
                 "responses": ["The Attorney-General is the Government’s legal adviser and does not act for private individuals in private disputes.  If you wish to appoint a lawyer to take legal action on your behalf, please contact the Law Society of Singapore for information on private lawyers."],
                 "context_filter": ""
         },
-        {"tag": "I run a construction company and have participated in a tender exercise to secure a contract with the Government.  The tender exercise has closed.  Can I now negotiate with the Government on the contractual terms and the price?",
+        {"tag": "tender price",
                 "patterns": ["I run a construction company and have participated in a tender exercise to secure a contract with the Government.  The tender exercise has closed.  Can I now negotiate with the Government on the contractual terms and the price?"],
                 "responses": ["No.  Tenders are the prescribed mode for Government agreements.  It is a fair and transparent process where all parties make their offers to the Government on the same objective basis.Central to a proper tender exercise is that all tendering parties make their offers to the Government on the same contractual terms and conditions.  There must be a level playing field for all the tender offerors.  The Government’s requirements for the contract called by tender must be clearly specified.  These would enable fair and transparent evaluation of tender offers made and ensures that the Government obtains best value for the transaction.As such no re-negotiation on the terms and conditions with any one offeror after the close of the tender exercise can take place as this would mean that vendors can no longer be evaluated on a level playing field."],
                 "context_filter": ""
@@ -84,12 +79,12 @@
                 "responses": ["IAD was established on 1 July 1995."],
                 "context_filter": ""
         },
-        {"tag":"What is the difference between an Assistant Public Prosecutor (APP) and a Deputy Public Prosecutor (DPP)?",
+        {"tag":"Assistant Public Prosecutor (APP) and a Deputy Public Prosecutor (DPP)?",
                 "patterns": ["What is the difference between an Assistant Public Prosecutor (APP) and a Deputy Public Prosecutor (DPP)?"],
                 "responses": ["Deputy Public Prosecutors (DPPs) and Assistant Public Prosecutors (APPs) are appointed by the Attorney-General, who is also the Public Prosecutor (PP), to perform prosecutorial and other duties in relation to criminal matters. They represent the PP in criminal hearings and proceedings and also assist in other proceedings such as disposal and coroner’s inquiries.  In appropriate cases, these prosecutors will make legal submissions on points of law and address the Court on sentencing by highlighting the aggravating and mitigating circumstances of each case.DPPs and APPs are appointed under different schemes of service offering different progressions and specialisations.  DPPs are recruited as Legal Service Officers by Legal Service Commission.  APPs on the other hand are employed under the Management Executive Scheme which is applicable to university graduates and degree holders within Civil Service.The prosecutorial functions performed by DPPs and APPs are largely similar. Both DPPs and APPs may conduct any proceeding relating to a criminal matter in both the State Courts as well as the High Court.  DPPs are also empowered to: a) appear on behalf of the PP in respect of criminal appeals, case stated or criminal reference on a question of law; b) issue any consent, fiat or authorisation for the trial of an offence before any court or tribunal; c) make any application or requisition for the forfeiture, confiscation or disposal of any case property that is required under any written law and d) issue any authorisation or permission for the exercise by any police officer of the powers of investigation under the Criminal Procedure Code. "],
                 "context_filter": ""
         },
-        {"tag":"I am interested in joining the Attorney-General’s Chambers.  Where and how do I apply for a job? ",
+        {"tag":"Attorney-General’s Chambers job ",
                 "patterns": ["I am interested in joining the Attorney-General’s Chambers.  Where and how do I apply for a job? "],
                 "responses": ["For legal positions, please apply to the Legal Service Commission at www.lsc.gov.sg.For non-legal positions, please apply directly at www.careers.gov.sg."],
                 "context_filter": ""
@@ -99,12 +94,12 @@
                 "responses": ["For graduate positions, degrees from universities accredited by the home government of the country where the university is located will be considered for appointment into the Public Service. This applies to degrees obtained full-time or part time, through distance-learning or twinning programmes, etc. Professional qualifications such as law and accountancy from foreign institutions also need to be recognised by the relevant professional body in Singapore to be considered for appointment.The Public Service does not solely look at academic qualification when choosing candidates. We also take into account other important factors such as relevant work experience, past performance (e.g. track records), as well as personal attributes like leadership abilities. The relative emphasis on each factor and the criteria set depends on the nature and level of the job, and only the candidate who best fits the overall requirements of the job will be recruited. "],
                 "context_filter": ""
         },
-        {"tag":"What is the difference between separation and divorce? ",
+        {"tag":"separation and divorce? ",
                 "patterns": ["What is the difference between separation and divorce? "],
                 "responses": ["A separation is not the same as a divorce. The key difference between separation and divorce is that when you are separated, you are still legally married to your spouse even though you are living apart. If you later decide to get divorced, you need to go through the legal steps necessary to terminate your marriage. "],
                 "context_filter": ""
         },
-        {"tag":"What are some of the pre-divorce considerations? ",
+        {"tag":"pre-divorce",
                 "patterns": ["What are some of the pre-divorce considerations?"],
                 "responses": ["Some of the things you need to consider before getting a divorce are: The legal requirements based on the type of marriage (for example, you would need to file for divorce with the Family Justice Courts for civil marriages or the Syariah Court for Muslim marriages.) The financial and psychological impact of divorce on your family, Divorce for civil marriages. The parenting plan for your children and their well-being. The housing and living arrangements that may affect separate household budgets. How prepared you are for life changes after the divorce "],
                 "context_filter": ""
@@ -244,41 +239,61 @@
                 "responses": ["Where the claimant was negligent or had in some way contributed to his or her own damage, the amount recoverable will be reduced to an extent which is fair and reasonable. For example, if the court determines that the claimant has contributed to his own damages by 50%, the amount of damages ultimately obtained will be reduced by 50%. "],
                 "context_filter": ""
         },
-        {"tag":"Personal Injury",
+        {"tag":"",
                 "patterns": ["What is this going to cost me?"],
                 "responses": ["We are committed to providing clients with a no-stress, no-hassle intake process, and to delivering affordable justice to all injury victims. Consequently, we offer the following arrangements to all of our prospective clients: 1. A Free Initial Consultation. Every prospective client is entitled to a free initial consultation with someone from our firm without any kind of charge or obligation. We also work on a contingency fee basis, which means that you 'Don’t Pay Until You Win."],
                 "context_filter": ""
         },
-        {"tag":"Personal Injury",
+        {"tag":"",
                 "patterns": ["Do I have a Legal Claim?"],
                 "responses": ["The first thing that many individuals wonder when they are hurt in an accident is if they have a legal claim. It is often difficult to parse through the specifics of a case to understand who might be at fault and whether a third-party acted inappropriately such that they will be held accountable, in full or in part, for the harm caused."],
                 "context_filter": ""
         },
-        {"tag":"Personal Injury",
+        {"tag":"",
                 "patterns": ["Can I Handle The Case on My Own, Or Do I Need an Attorney?"],
                 "responses": ["Following an accident it is understandable for individuals to want to settle the matter quickly and move on with their lives as soon as possible. As a result, some may be tempted to try to take care of all issues—including legal issues—without getting professional representation. It is crucial to understand the pitfalls of trying to go it alone."],
                 "context_filter": ""
         },
-        {"tag":"Personal Injury",
+        {"tag":"",
                 "patterns": ["Should I Accept the Insurance Company Settlement?"],
                 "responses": ["It cannot be reiterated enough that insurance companies are in the business of minimizing payouts to maximize company profits. No matter how nice the insurance adjuster seems or how many details they give you regarding your compensation, the adjuster’s goal is to pay you as little as possible. In fact, the adjuster is usually rewarded for resolving claims for as little as possible and as quickly as possible."],
                 "context_filter": ""
         },
-        {"tag":"Personal Injury",
+        {"tag":"",
                 "patterns": ["What Is my Case Worth?"],
                 "responses": ["It is impossible to make generalizations about the value of any case without knowing the details of the harm caused and the manner it was caused. One of the most important jobs that your attorney will conduct is leaving no stone unturned when it comes to detailing all possible losses that will translate into a legal recovery. The law allows recovery for a wide range of situations, many of which may not be readily apparent to the injured party. This includes past medical bills, future medical and rehabilitation costs, therapy, lost past wages, lost future income, pain and suffering, and more."],
                 "context_filter": ""
         },
-        {"tag":"Personal Injury",
+        {"tag":"",
                 "patterns": ["What to do after a car accident?"],
                 "responses": ["When a motor vehicle accident occurs it is easy to become disoriented, shaken, and confused. However, in the aftermath of an accident it is important to obtain crucial information. A helpful way to remind yourself what to do after a car accident is to keep a checklist of phone numbers to call and questions to ask along with your insurance information in your glove compartment or center console"],
                 "context_filter": ""
         },
-        {"tag":"Personal Injury",
+        {"tag":"",
                 "patterns": ["How do I handle insurance adjusters?"],
                 "responses": ["When accidents occur, it is common for an insurance company to ask you to make a recorded statement with an insurance adjuster. It is never wise to do so without having consulted yourattorney first. If you decide to do so without an attorney’s advice, you should keep certain facts in mind."],
                 "context_filter": ""
-        }
-
+        },
+		{"tag":"small claim tribunals",
+                "patterns": ["What is the maximum claimable amount in small claims tribunal?", "How much can small claim tribunals give?"],
+                "responses": ["The claim amount is less than 10,000. If it's more than 10,000 please commence litigation."],
+                "context_filter": ""
+        },
+		{"tag":"cheapest lawyer",
+                "patterns": ["Where can I find a personal injury lawyer?"],
+                "responses": ["While we don't recommend any lawyer, we do have a just connect system that groups people with similar issues to a lawyer of that speciality for shared initial consultation."],
+                "context_filter": ""
+        },
+		{"tag":"medical negligence",
+                "patterns": ["How to sue for medical negligence?","My doctor was negligent?", "My doctor made a mistake"],
+                "responses": ["THe first step is to get an initial consultation from a lawyer. Legal Kaki's just connect feature facilitates shared initial consultation. If you want an overview of the litigation procedure, please use Juris Avenue that we offer on this website."],
+                "context_filter": ""
+		},
+		{"tag":"tenantancy",
+                "patterns": ["Can I rent my flat out to friends?","Can I rent my flat out as an airbnb?", "Can I sublet my flat?", "Can I Share my room with a friend?"],
+                "responses": ["No, you cannot sublet a property without prior approval from the landlord. FOr a more detailed explaination on the law on this matter. Please visit general matters> land lord tenant disputes."],
+                "context_filter": ""
+		}
+        
    ]
 }

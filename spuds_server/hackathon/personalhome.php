@@ -29,7 +29,7 @@
         </nav>
 
         <br><br><br><br><br>
-        <a class="btn btn-danger btn-block" href="" role="button">Legal Kaki</a><br>
+        <a class="btn btn-danger btn-block" href="bot_response.php" role="button">Legal Kaki</a><br>
         <a class="btn btn-warning btn-block" href="extramile.php" role="button">Extra Mile</a><br>
         <a class="btn btn-success btn-block" href="shared_economy.php" role="button">Just Connect</a><br>
         <iframe width="1280" height="720" src="https://www.powtoon.com/embed/bz3XAZO90aB/" frameborder="0"></iframe>
