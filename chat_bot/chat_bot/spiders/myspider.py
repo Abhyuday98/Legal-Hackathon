@@ -14,7 +14,12 @@ class MySpider(scrapy.Spider):
     #sqlUrlList ="select product_url,id from product_urls where product_url not in(select product_url from product_detail WHERE day(DateUpdated)=day(now()) and month(DateUpdated)=month(now()) and year(DateUpdated)=year(now()) group by product_url) order by id" 
     #select product_url,id from product_urls where product_url not in(select product_url from product_detail WHERE day(DateUpdated)=day(now()) and month(DateUpdated)=month(now()) and year(DateUpdated)=year(now()))"
     #"SELECT product_url FROM pricetrack.testurl01 where product_url not in (select product_url from product_detail) order by product_url asc"
-    cursorUrls.execute("select * from ")
+    '''
+    cursorUrls.execute("select urls from data_urls")
+    start_urls=[]
+    for row in cursorUrls:
+        start_urls.append(row[0])
+    '''
     start_urls=['https://singaporelegaladvice.com/law-articles/divorce/',
                 'https://singaporelegaladvice.com/law-articles/criminal-law/',
                 'https://singaporelegaladvice.com/law-articles/inheritance/',
@@ -142,11 +147,29 @@ class MySpider(scrapy.Spider):
         return discount
     '''       
     def parse(self, response):
-        all_urls = response.xpath("//li[@class='learning-center-page--suboutline-li']/a/@href").extract()
-        urls = []
-        for url in all_urls:
-            self.cursorUrls.execute(('insert into data_urls(urls) values("{}");').format(url)).commit()
-            urls.append(url)
+        
+        all_questions = response.xpath("//li[@class='learning-center-page--suboutline-li']/a/@href").extract()
+        #all_questions = response.xpath("//h2/strong[1]/text()").extract()
+        try:
+            if response.request.meta['redirect_urls']:
+                url=response.request.meta['redirect_urls'][0]
+            else:
+                url=response.request.url
+        except:
+            url=response.request.url         
+        tag=url
+        #tag = u[0:len(u)][u.rfind('/')+1::]
+        if tag.rfind('/')==len(tag)-1:
+            tag = tag[0:len(tag)-1]
+        tag = tag[tag.rfind('/')+1::]
+            #print(tag)
+        
+        #all_answers = 
+        questions = []
+        for question in all_questions:
+            self.cursorUrls.execute(('insert into data_urls(urls,tags) values("{}","{}");').format(question, tag)).commit()
+            #self.cursorUrls.execute(('insert into legal_data(question,url) values("{}","{}");').format(url, question)).commit()
+            questions.append(question)
         '''
         #fetch()
         
