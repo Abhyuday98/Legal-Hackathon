@@ -1,0 +1,284 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "Private Prosecutor ",
+         "patterns": [
+            "What is a private prosecution and who can institute it?" ],
+         "responses": [
+            "A private prosecution is brought by a private individual to seek redress for a wrong done unto him. If the subject of the prosecution is found guilty and convicted, he will be duly sentenced by the Court, even though the Prosecution was not instituted by the State. A private prosecution is thus 'a prosecution by a private individual which, if successful, relies on the state machinery to mete out the sentence imposed- per Yong CJ, in Cheng William v Loo Ngee Long Edmund 2001 2 SLR(R) 626. The private individual may conduct the prosecution himself if he does not have a lawyer. "]
+        },
+        {"tag": "How to institute a Private Prosecutor",
+         "patterns": [
+            "How does one institute a private prosecution ?" ], 
+         "responses": [
+            "A private individual will have to first lay a complaint with a Magistrate at the State Courts, Singapore."
+        ]
+        },
+        {"tag": "Overseas offence",
+         "patterns": ["Can a person be prosecuted for an offence which he has committed overseas?" ],
+         "responses": ["Generally, Singapore does not have extra-territorial jurisdiction to prosecute criminal offences committed overseas. However, such a person may be prosecuted under the laws of the jurisdiction he is in. Also, there are certain offences which have been legislated by Parliament to have extra-territorial effect: corruption offences (see: section 37 of the Prevention of Corruption Act) and having commercial sex with a minor under 18 outside Singapore (see section 376C of the Penal Code)."]
+        },
+        {"tag": "interview with prosecutor",
+         "patterns": ["Prosecutors routinely interview witnesses and victims of crime in order to assess the case fully before deciding whether or not to prosecute the accused person. In addition, prosecutors may also interview witnesses and victims of crime before a trial for a better understanding of the evidence that the witnesses and victims of crime are likely to give in court. These interviews are designed to allow prosecutors to acquire a deeper understanding of the facts of the case, and will involve the prosecutors asking some questions in order to clarify what had transpired. The questions asked are not meant to intimidate, and witnesses and victims are only required to relate the relevant events to the extent that their memories allow. Interviews with prosecutors are usually conducted in the presence of the investigating officer in a meeting room in AGC. Interpreters may also be present where necessary.","What should a witness/victim of crime expect during interviews with prosecutors?"],
+         "responses": ["Prosecutors routinely interview witnesses and victims of crime in order to assess the case fully before deciding whether or not to prosecute the accused person. In addition, prosecutors may also interview witnesses and victims of crime before a trial for a better understanding of the evidence that the witnesses and victims of crime are likely to give in court. These interviews are designed to allow prosecutors to acquire a deeper understanding of the facts of the case, and will involve the prosecutors asking some questions in order to clarify what had transpired. The questions asked are not meant to intimidate, and witnesses and victims are only required to relate the relevant events to the extent that their memories allow. Interviews with prosecutors are usually conducted in the presence of the investigating officer in a meeting room in AGC. Interpreters may also be present where necessary."]
+        },
+        {"tag": "Must all representations on behalf of accused persons be submitted to AGC through a hard copy letter?",
+         "patterns": ["Must all representations on behalf of accused persons be submitted to AGC through a hard copy letter?" ,"No. Representations on behalf of accused persons may also be sent to AGC at AGC_Crime_Representations@agc.gov.sg."],
+         "responses": ["Are you looking to rent today or later this week?"],
+         "context_set": "AGC"
+        },
+        {"tag": "defence counsel Urgent Representation",
+         "patterns": ["How can accused persons and defence counsel make urgent representations to AGC?","Several prosecutors from AGC’s Crime Cluster are rostered to be on duty on each working day. These Duty Officers are responsible for dealing with cases which require immediate attention, for instance, where investigating officers require urgent directions and where urgent representations are made by accused persons and defence counsel. In addition, there is a Senior DPP on duty in the State Courts every morning from Monday to Saturday (excluding public holidays), and urgent representations may be dealt with by the Senior DPP on duty as well. "],
+         "responses": ["Several prosecutors from AGC’s Crime Cluster are rostered to be on duty on each working day. These Duty Officers are responsible for dealing with cases which require immediate attention, for instance, where investigating officers require urgent directions and where urgent representations are made by accused persons and defence counsel. In addition, there is a Senior DPP on duty in the State Courts every morning from Monday to Saturday (excluding public holidays), and urgent representations may be dealt with by the Senior DPP on duty as well. "],
+         "context_filter": "urgent representation"
+        },
+        {"tag": "Criminal Case Management System (CCMS)",
+                "patterns": ["Does the Criminal Case Management System apply only to cases prosecuted in the State Courts?"],
+                "responses": ["No. The CCMS applies to cases prosecuted in both the High Court and the State Courts. CCMS sessions for cases prosecuted in the High Court may be arranged through requests to the Director of the relevant directorate."],
+                "context_filter": "Criminal Case Management System (CCMS)"
+        },
+        {"tag": "legal officers in CJD",
+                "patterns": ["Do legal officers in CJD only do work which pertains to their directorate?","Do legal officers in CJD move from one directorate to another?"],
+                "responses": ["No. In order to give each legal officer a complete understanding of CJD’s role and function, the Chief Prosecutor and CJD management make a conscious effort to expose each legal officer to the work of all the directorates. CJD legal officers are therefore routinely assigned work by the Directors of other directorates, especially in areas of work in which they have indicated an interest.","Yes. Legal officers in CJD can request a move from one directorate to another, for instance, when they have acquired sufficient expertise in the work of a particular directorate and would like to gain more experience in the work of another directorate."],
+                "context_filter": "legal officers in CJD"
+        },
+        {"tag": "If I have a legal problem, can AGC advise me?",
+                "patterns": ["If I have a legal problem, can AGC advise me?"],
+                "responses": ["The information contained on these pages is not legal advice. We regret to inform that we are unable to advise you as the Attorney-General's Chambers are the legal advisers to the government, and cannot provide legal advice to members of the public. Should you require independent legal advice, you may wish to refer to the website of the Law Society of Singapore www.lawsociety.org.sg which provides a list of law firms in Singapore."],
+                "context_filter": ""
+        },
+        {"tag": "If I have a legal problem, can AGC advise me?",
+                "patterns": ["If I have a legal problem, can AGC advise me?"],
+                "responses": ["The information contained on these pages is not legal advice. We regret to inform that we are unable to advise you as the Attorney-General's Chambers are the legal advisers to the government, and cannot provide legal advice to members of the public. Should you require independent legal advice, you may wish to refer to the website of the Law Society of Singapore www.lawsociety.org.sg which provides a list of law firms in Singapore."],
+                "context_filter": ""
+        }
+        ,
+        {"tag": "Where can I find information on legislation and reproduction of legislation? ",
+                "patterns": ["Where can I find information on legislation and reproduction of legislation? "],
+                "responses": ["For FAQs on legislation and the reproduction of legislation, please go to https://sso.agc.gov.sg/Help/FAQ. "],
+                "context_filter": ""
+        },
+        {"tag": "I have a dispute with my neighbor as there is loud music playing from his house all night.  Can I ask the Attorney-General to take action against him on my behalf?",
+                "patterns": ["I have a dispute with my neighbor as there is loud music playing from his house all night.  Can I ask the Attorney-General to take action against him on my behalf?"],
+                "responses": ["The Attorney-General is the Government’s legal adviser and does not act for private individuals in private disputes.  If you wish to appoint a lawyer to take legal action on your behalf, please contact the Law Society of Singapore for information on private lawyers."],
+                "context_filter": ""
+        },
+        {"tag": "I run a construction company and have participated in a tender exercise to secure a contract with the Government.  The tender exercise has closed.  Can I now negotiate with the Government on the contractual terms and the price?",
+                "patterns": ["I run a construction company and have participated in a tender exercise to secure a contract with the Government.  The tender exercise has closed.  Can I now negotiate with the Government on the contractual terms and the price?"],
+                "responses": ["No.  Tenders are the prescribed mode for Government agreements.  It is a fair and transparent process where all parties make their offers to the Government on the same objective basis.Central to a proper tender exercise is that all tendering parties make their offers to the Government on the same contractual terms and conditions.  There must be a level playing field for all the tender offerors.  The Government’s requirements for the contract called by tender must be clearly specified.  These would enable fair and transparent evaluation of tender offers made and ensures that the Government obtains best value for the transaction.As such no re-negotiation on the terms and conditions with any one offeror after the close of the tender exercise can take place as this would mean that vendors can no longer be evaluated on a level playing field."],
+                "context_filter": ""
+        },
+        {"tag":"When was IAD established?",
+                "patterns": ["When was IAD established?"],
+                "responses": ["IAD was established on 1 July 1995."],
+                "context_filter": ""
+        },
+        {"tag":"What is the difference between an Assistant Public Prosecutor (APP) and a Deputy Public Prosecutor (DPP)?",
+                "patterns": ["What is the difference between an Assistant Public Prosecutor (APP) and a Deputy Public Prosecutor (DPP)?"],
+                "responses": ["Deputy Public Prosecutors (DPPs) and Assistant Public Prosecutors (APPs) are appointed by the Attorney-General, who is also the Public Prosecutor (PP), to perform prosecutorial and other duties in relation to criminal matters. They represent the PP in criminal hearings and proceedings and also assist in other proceedings such as disposal and coroner’s inquiries.  In appropriate cases, these prosecutors will make legal submissions on points of law and address the Court on sentencing by highlighting the aggravating and mitigating circumstances of each case.DPPs and APPs are appointed under different schemes of service offering different progressions and specialisations.  DPPs are recruited as Legal Service Officers by Legal Service Commission.  APPs on the other hand are employed under the Management Executive Scheme which is applicable to university graduates and degree holders within Civil Service.The prosecutorial functions performed by DPPs and APPs are largely similar. Both DPPs and APPs may conduct any proceeding relating to a criminal matter in both the State Courts as well as the High Court.  DPPs are also empowered to: a) appear on behalf of the PP in respect of criminal appeals, case stated or criminal reference on a question of law; b) issue any consent, fiat or authorisation for the trial of an offence before any court or tribunal; c) make any application or requisition for the forfeiture, confiscation or disposal of any case property that is required under any written law and d) issue any authorisation or permission for the exercise by any police officer of the powers of investigation under the Criminal Procedure Code. "],
+                "context_filter": ""
+        },
+        {"tag":"I am interested in joining the Attorney-General’s Chambers.  Where and how do I apply for a job? ",
+                "patterns": ["I am interested in joining the Attorney-General’s Chambers.  Where and how do I apply for a job? "],
+                "responses": ["For legal positions, please apply to the Legal Service Commission at www.lsc.gov.sg.For non-legal positions, please apply directly at www.careers.gov.sg."],
+                "context_filter": ""
+        },
+        {"tag":"",
+                "patterns": ["How do I find out whether my degree makes me eligible for employment in the Singapore Public Service?"],
+                "responses": ["For graduate positions, degrees from universities accredited by the home government of the country where the university is located will be considered for appointment into the Public Service. This applies to degrees obtained full-time or part time, through distance-learning or twinning programmes, etc. Professional qualifications such as law and accountancy from foreign institutions also need to be recognised by the relevant professional body in Singapore to be considered for appointment.The Public Service does not solely look at academic qualification when choosing candidates. We also take into account other important factors such as relevant work experience, past performance (e.g. track records), as well as personal attributes like leadership abilities. The relative emphasis on each factor and the criteria set depends on the nature and level of the job, and only the candidate who best fits the overall requirements of the job will be recruited. "],
+                "context_filter": ""
+        },
+        {"tag":"What is the difference between separation and divorce? ",
+                "patterns": ["What is the difference between separation and divorce? "],
+                "responses": ["A separation is not the same as a divorce. The key difference between separation and divorce is that when you are separated, you are still legally married to your spouse even though you are living apart. If you later decide to get divorced, you need to go through the legal steps necessary to terminate your marriage. "],
+                "context_filter": ""
+        },
+        {"tag":"What are some of the pre-divorce considerations? ",
+                "patterns": ["What are some of the pre-divorce considerations?"],
+                "responses": ["Some of the things you need to consider before getting a divorce are: The legal requirements based on the type of marriage (for example, you would need to file for divorce with the Family Justice Courts for civil marriages or the Syariah Court for Muslim marriages.) The financial and psychological impact of divorce on your family, Divorce for civil marriages. The parenting plan for your children and their well-being. The housing and living arrangements that may affect separate household budgets. How prepared you are for life changes after the divorce "],
+                "context_filter": ""
+        },
+        {"tag":"",
+                "patterns": [" How can counselling help my family? "],
+                "responses": ["When a marriage ends, it can be an emotionally difficult time for the family.Counselling can help your family cope with divorce, as the counsellor may share insights and teach coping skills to help the family manage the aftermath of a divorce. You may be able to learn more about the resources and support that are available in the community. "],
+                "context_filter": ""
+        },
+        {"tag":"Where can I get counselling and other forms of support? ",
+                "patterns": ["Where can I get counselling and other forms of support? "],
+                "responses": ["Counselling is available at the four Divorce Support Specialist Agencies (DSSAs). The staff at the DSSAs are experienced social workers and counsellors with specialised skills in working with divorcing and divorced families and children. Counselling is available as individual, joint or family sessions."],
+                "context_filter": ""
+        },
+        {"tag":"What is co-parenting?",
+                "patterns": ["What is co-parenting?"],
+                "responses": ["Co-parenting happens when both you and your ex-spouse continue to work together to raise your children even though you are divorced and may no longer be living together. Cooperative co-parenting gives your children stability, despite changes to the family structure. Find out more about co-parenting. "],
+                "context_filter": ""
+        },
+        {"tag":"Where can I get free legal advice",
+                "patterns": ["Where can I get free legal advice"],
+                "responses": ["Some organisations offer legal clinics where you can seek free legal advice on divorce matters. These may include child custody, divorce maintenance issues, and/or any other ancillary matters. You can get more information at our Legal Aid page. "],
+                "context_filter": ""
+        },
+        {"tag":"Are support programmes and counselling offered for free at DSSA? ",
+                "patterns": ["Are support programmes and counselling offered for free at DSSA? "],
+                "responses": ["The support programmes and counselling services provided by the Divorce Support Specialist Agencies are free. To find out more please contact your nearest DSSA. "],
+                "context_filter": ""
+        },
+        {"tag":"How can I get help on child maintenance issues? ",
+                "patterns": ["How can I get help on child maintenance issues? "],
+                "responses": ["The parent who has custody, care and control of the children can apply for child maintenance. If you are not receiving divorce maintenance regularly, or if you are not receiving the full amount of the maintenance, you may apply to enforce the maintenance order. This is a legal matter and needs to be done through the Courts. If you prefer not to do this at the Family Justice Courts, you may also file your complaint via the video-filing service which is available at the Maintenance Support Central (MSC) of the Singapore Council of Women’s Organisations or HELP FSC. These organisations can also assist with the filing of fresh maintenance applications. The social workers and staff will help you with the application process which uses a video link service with the Family Justice Courts. They can also provide counselling and other areas of social support, if needed. Parties may also seek to vary their maintenance order if their circumstances have changed. You may approach the Community Justice Centre for assistance to vary your maintenance order. "],
+                "context_filter": ""
+        },
+        {"tag":"How do I get help when I am faced with family violence? ",
+                "patterns": ["How do I get help when I am faced with family violence? "],
+                "responses": ["If you or your children are the victims of domestic violence, you may: 1.Call the police to seek help. 2.Visit any of the Family Violence Specialist Centres nearest to you for advice and assistance. PAVE: (65) 6555 390 . TRANS SAFE Centre: (65) 6449 9088. Care Corner Project StART: (65) 6476 1482"],
+                "context_filter": ""
+        },
+        {"tag":"What is mediation? ",
+                "patterns": ["What is mediation? "],
+                "responses": ["Mediation is a process that offers a safe and supportive environment for parties to communicate openly with each other. Parties can be guided to explore options for themselves and their children through the assistance of a neutral third party (a mediator). Mediation can help you: Save time, money and the stress of going through the Courts systems ,Find better ways of dealing with conflict in a neutral setting ,Focus on what is best for your children and family "],
+                "context_filter": ""
+        },
+        {"tag":"Why were the Family Justice Courts set up?",
+                "patterns": ["Why were the Family Justice Courts set up?"],
+                "responses": ["The Family Justice Courts are established pursuant to the Family Justice Act which was passed by Parliament on 4 August 2014. The Family Justice Act was enacted based on the recommendations of the Committee for Family Justice which was formed in 2013 to review how Singapore’s family justice system may be reformed to address the needs of youth and families in distress"],
+                "context_filter": ""
+        },
+        {"tag":"What are the advantages of the new family court system compared to the previous one?",
+                "patterns": ["What are the advantages of the new family court system compared to the previous one?"],
+                "responses": ["The Family Justice Courts are a restructure of our court system to better serve litigants. By bringing together all family-related work under a specialized body of courts, we would be able to frame disputes from the perspective of families and the individuals within. This is in contrast to other types of cases which are traditionally dealt with in an adversarial manner. In addition, we would be able to provide a suite of family-specific services, enhance processes and identify relevant training programmes that develop family-specific skills in Judges, lawyers and other family practitioners."],
+                "context_filter": ""
+        },
+        {"tag":"What is the structure for the Family Justice Courts?",
+                "patterns": ["What is the structure for the Family Justice Courts?"],
+                "responses": ["The Family Justice Courts' is the collective name for a body of courts which comprise the Family Division of the High Court, the Family Courts and the Youth Courts. These Courts are administered by the Presiding Judge of the Family Justice Courts. The Family Justice Courts will hear the full suite of family-related cases including all divorce and related matters, family violence cases, adoption and guardianship cases, Youth Court cases, and applications for deputyship under the Mental Capacity Act; probate and succession will come into the Courts’ jurisdiction in January 2015.There is a centralised registry to receive, assign and manage the entire suite of family justice cases that come before the court. There are also Registrars who will assist the different Judges with their cases.  Court users will experience greater convenience and consistency in the management of their cases. Ancillary services, such as mediation and counselling, will be streamlined throughout the various Courts."],
+                "context_filter": ""
+        },
+        {"tag":"What cases are heard by the Youth Courts?",
+                "patterns": ["What cases are heard by the Youth Courts?"],
+                "responses": ["The Youth Courts, formerly known as the Juvenile Court, hear cases relating to children and young persons, for example, offences committed by youths, children beyond parental control, child protection cases under the Children and Young Person’s Act (Cap. 38)."],
+                "context_filter": ""
+        },
+        {"tag":"What cases are heard by the Family Division of the High Court?",
+                "patterns": ["What cases are heard by the Family Division of the High Court?"],
+                "responses": ["The Family Division of the High Court will hear cases of first instance and appeals from the Family Courts and the Youth Courts. Special attention could be useful in some judgments where the High Court gives guidance to the Courts below; such appeals may be heard by three Judges."],
+                "context_filter": ""
+        },
+        {"tag":"What about the Court of Appeal?",
+                "patterns": ["What about the Court of Appeal?"],
+                "responses": ["The Court of Appeal will hear appeals from the Family Division of the High Court. For cases dealt with by the Family Courts and Youth Court at first instance, leave to appeal the High Court’s appellate decision may be obtained."],
+                "context_filter": ""
+        },
+        {"tag":"Will the new Family Justice Courts be at one physical location such that people needing help can approach this one-stop centre?",
+                "patterns": ["Will the new Family Justice Courts be at one physical location such that people needing help can approach this one-stop centre?"],
+                "responses": ["All family-related matters and youth matters will be received, assigned and managed by the centralised registry of the Family Justice Courts located at 3 Havelock Square, regardless of whether they are to be dealt with by the Youth Courts, Family Courts or Family Division of the High Court. The Youth Courts and Family Courts are located at 3 Havelock Square while the High Court Family Division is at 1 Supreme Court Lane. Litigants and court users who need informational assistance on court processes and procedures, and referrals to family resource community agencies may visit the HELP Services of the Community Justice Centre located on Level 3 of the Family Justice Courts at 3 Havelock Square."],
+                "context_filter": ""
+        },
+        {"tag":"What is envisaged under a Judge-led approach in managing cases?",
+                "patterns": ["What is envisaged under a Judge-led approach in managing cases?"],
+                "responses": ["The Judge can assist the parties by taking the lead and controlling the pace of the proceedings. The Judge will take a more proactive role in each case. This will include assessing if the dispute can be resolved amicably and considering options such as mediation and counselling. If the dispute cannot be resolved amicably, the Judge will identify the relevant issues, and direct parties to address the issues. The Judge will determine the manner in which evidence is produced and admitted, regulate the filing of court documents and may, in appropriate cases, appoint a Child Representative or order expert assistance from social and psychological service professionals. In urgent cases, the Judge may place the case on an expedited track."],
+                "context_filter": ""
+        },
+        {"tag":"What is meant by differentiated case management?",
+                "patterns": ["What is meant by differentiated case management?"],
+                "responses": ["Cases will be managed according to their complexity and urgency and may be assigned to different timelines for disposal. If necessary the same Judge may be assigned to a case from start to finish for holistic resolution of the dispute."],
+                "context_filter": ""
+        },
+        {"tag":"What is the Family Court Friend Scheme?",
+                "patterns": ["What is the Family Court Friend Scheme?"],
+                "responses": ["The Court may, at any stage of proceedings, refer an unrepresented litigant to the Community Justice Centre (CJC) or other pro-bono agency for the assignment of a Court Friend to assist him. It is up to the litigant whether or not he wishes to accept the referral. The Court Friend may provide practical and emotional support to the litigant, such as: Providing information on court procedure and processes. Providing emotional and moral support during the court processes. Taking notes of court proceedings and organizing documents for use in court. The Court Friend is not allowed to provide legal advice and/or represent the litigant in court."],
+                "context_filter": ""
+        },
+        {"tag":"",
+                "patterns": ["How may one volunteer as a Court Friend?"],
+                "responses": ["Interested persons may contact the Community Justice Centre for more details on how to become a volunteer."],
+                "context_filter": ""
+        },
+        {"tag":"",
+                "patterns": ["What is the role of a Child Representative?"],
+                "responses": ["The primary role of the Child Representative is to act in the best interests of the child including presenting the child’s views  in the court proceedings.  The Child Representative may interview and interact with the child and the parents to explain the court processes to them, facilitate the child’s and parents’ cooperation, obtain all relevant evidence to aid the Court in deciding what arrangement would be in the best interest of the child and gives his or her view during the court hearing. The Child Representative will be appointed only in cases where the parents are unable to agree on issues pertaining to the custody, care and control, and access. This new scheme is not intended and will not diminish the role of parents vis-à-vis the decision-making process. It provides the Court with more perspectives on which to arrive at a fair and equitable outcome in the overall best interest of the child."],
+                "context_filter": ""
+        },
+        {"tag":"",
+                "patterns": ["Must the child representative be a lawyer?"],
+                "responses": ["No. The intention is to eventually have the panel of child representative include child psychologist, child psychiatrist and other mental health professionals or child specialists. However, the first panel of child representatives comprise of very experienced lawyers who have been practising family law for many years."],
+                "context_filter": ""
+        },
+        {"tag":"",
+                "patterns": ["How will the cost of the assessors and child representatives be borne?"],
+                "responses": ["The Court has the power to apportion costs. Usually, both parents would share the cost equally. However, if a party is legally aided, Legal Aid Bureau will asssist with the legally aided party’s share of the cost. Depending on the circumstances of the case, the Legal Aid Bureau may require the legally aided party to make some contribution towards the costs as well"],
+                "context_filter": ""
+        },
+        {"tag":"",
+                "patterns": ["What is meant by a child-centred approach?"],
+                "responses": ["The Court’s approach is to treat the interest of the child as paramount in dealing with disputes involving children. We have, in the past, appointed amicus curiae to look into various child issues. Our counsellors and psychologists have also worked closely with children to secure their best interests.While parents generally want the best for their children, in the heat of a divorce battle, they may unwittingly take positions or make arrangements that are not beneficial for their children. The Family Justice Courts take different approaches for dealing with cases involving children. Trained professionals from the Family Justice Court may also work with the parents to elicit the needs of the children without the children being present, or interview the children directly to help them articulate their concerns, fears and wishes, so as to reduce the trauma that the children may experience from their parents’ divorce. The feedback from the session with the children is brought back to the parents to help them better understand their children’s needs, thereby enabling the parents to move from an adversarial to a collaborative stance in negotiating the future parenting arrangement.A child needs to be heard and listened to by their parents, mental health and legal professionals, and ultimately the Judges who decide their case in their best interest. Focusing on the needs of the children in the divorce proceedings can also reduce the intensity and duration of the conflict between the parents. This leads to better relationships between parents and their children."],
+                "context_filter": ""
+        },
+        {"tag":"",
+                "patterns": ["What documents are required for a personal injury claim?"],
+                "responses": ["It would be advisable to bring all relevant documents pertaining to the accident. Typically, this includes:Accident/Traffic Police reports,Medical receipts, bill and invoices,Medical certificates,NRIC,Notice of Income Tax Assessment / CPF statement / Payslips (for claims for loss of earnings),Once the client has executed the Warrant to Act and has appointed Cosmas LLC to handle the matter, we will make all the other necessary applications to the relevant departments like the Land Transport Authority, Traffic Police, Hospitals, Clinics, etc."],
+                "context_filter": ""
+        },
+        {"tag":"",
+                "patterns": ["    What are general damages?"],
+                "responses": ["General damages do not have a specific or fixed amount. They are normally assessed based on what is stated in the medical/specialist reports. General damages include:Pain and suffering,Loss of earning capacity,Loss of future earning,Future medical expenses,Future transport expenses, We will evaluate your injury and assist you in understand the type of compensation that may be claimed for."],
+                "context_filter": ""
+        },
+        {"tag":"",
+                "patterns": ["   What are special damages?"],
+                "responses": ["Special damages are monetary losses that have already been incurred due to the accident. They include: Medical expenses, Transport expenses, Loss of earnings, For special damages to be claimed, documentary proof of your actual losses is required. These may come in the form of: Receipts,Invoices,Tax assessment statements,Payslips"],
+                "context_filter": ""
+        },
+        {"tag":"",
+                "patterns": ["  What is contributory negligence?"],
+                "responses": ["Where the claimant was negligent or had in some way contributed to his or her own damage, the amount recoverable will be reduced to an extent which is fair and reasonable. For example, if the court determines that the claimant has contributed to his own damages by 50%, the amount of damages ultimately obtained will be reduced by 50%. "],
+                "context_filter": ""
+        },
+        {"tag":"Personal Injury",
+                "patterns": ["What is this going to cost me?"],
+                "responses": ["We are committed to providing clients with a no-stress, no-hassle intake process, and to delivering affordable justice to all injury victims. Consequently, we offer the following arrangements to all of our prospective clients: 1. A Free Initial Consultation. Every prospective client is entitled to a free initial consultation with someone from our firm without any kind of charge or obligation. We also work on a contingency fee basis, which means that you 'Don’t Pay Until You Win."],
+                "context_filter": ""
+        },
+        {"tag":"Personal Injury",
+                "patterns": ["Do I have a Legal Claim?"],
+                "responses": ["The first thing that many individuals wonder when they are hurt in an accident is if they have a legal claim. It is often difficult to parse through the specifics of a case to understand who might be at fault and whether a third-party acted inappropriately such that they will be held accountable, in full or in part, for the harm caused."],
+                "context_filter": ""
+        },
+        {"tag":"Personal Injury",
+                "patterns": ["Can I Handle The Case on My Own, Or Do I Need an Attorney?"],
+                "responses": ["Following an accident it is understandable for individuals to want to settle the matter quickly and move on with their lives as soon as possible. As a result, some may be tempted to try to take care of all issues—including legal issues—without getting professional representation. It is crucial to understand the pitfalls of trying to go it alone."],
+                "context_filter": ""
+        },
+        {"tag":"Personal Injury",
+                "patterns": ["Should I Accept the Insurance Company Settlement?"],
+                "responses": ["It cannot be reiterated enough that insurance companies are in the business of minimizing payouts to maximize company profits. No matter how nice the insurance adjuster seems or how many details they give you regarding your compensation, the adjuster’s goal is to pay you as little as possible. In fact, the adjuster is usually rewarded for resolving claims for as little as possible and as quickly as possible."],
+                "context_filter": ""
+        },
+        {"tag":"Personal Injury",
+                "patterns": ["What Is my Case Worth?"],
+                "responses": ["It is impossible to make generalizations about the value of any case without knowing the details of the harm caused and the manner it was caused. One of the most important jobs that your attorney will conduct is leaving no stone unturned when it comes to detailing all possible losses that will translate into a legal recovery. The law allows recovery for a wide range of situations, many of which may not be readily apparent to the injured party. This includes past medical bills, future medical and rehabilitation costs, therapy, lost past wages, lost future income, pain and suffering, and more."],
+                "context_filter": ""
+        },
+        {"tag":"Personal Injury",
+                "patterns": ["What to do after a car accident?"],
+                "responses": ["When a motor vehicle accident occurs it is easy to become disoriented, shaken, and confused. However, in the aftermath of an accident it is important to obtain crucial information. A helpful way to remind yourself what to do after a car accident is to keep a checklist of phone numbers to call and questions to ask along with your insurance information in your glove compartment or center console"],
+                "context_filter": ""
+        },
+        {"tag":"Personal Injury",
+                "patterns": ["How do I handle insurance adjusters?"],
+                "responses": ["When accidents occur, it is common for an insurance company to ask you to make a recorded statement with an insurance adjuster. It is never wise to do so without having consulted yourattorney first. If you decide to do so without an attorney’s advice, you should keep certain facts in mind."],
+                "context_filter": ""
+        }
+
+   ]
+}
