@@ -29,7 +29,7 @@
         </nav>
 
         <br><br><br><br><br>
-        <a class="btn btn-danger btn-block" href="" role="button">Legal Kaki</a><br>
+        <a class="btn btn-danger btn-block" href="bot_response.php" role="button">Legal Kaki</a><br>
         <a class="btn btn-warning btn-block" href="crimchart.php" role="button">Juris Avenue</a><br>
         <a class="btn btn-info btn-block" href="documents.php" role="button">Documents</a><br>
         <a class="btn btn-success btn-block" href="shared_economy.php" role="button">Just Connect</a><br>
